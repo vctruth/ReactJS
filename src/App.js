@@ -19,10 +19,10 @@ class App extends React.Component {
   
   render() {
     return (
-      <div>
+     <React.Fragment>
         <Child handlerFromParent={this.handleData} /> 
         <h5>Received from Child:<br />{this.state.fromChild}</h5>
-      </div>
+     </React.Fragment>
     );
   }
 }
